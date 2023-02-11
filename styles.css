@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(167.96deg, #8257E5 0%, #271A45 100%);
+  display: grid;
+  place-items: center;
+}
+#app{
+  margin: auto; 
+  width: 327px;
+  height: 656px;
+}
+header{ 
+  font-family: 'Rubik';
+font-weight: 500;
+font-size: 20px;
+line-height: 24px;
+
+letter-spacing: -0.02em;
+text-align: center;
+
+color: #FFFFFF;
+margin-bottom: 20px;
+}
+main .header{
+  padding: 24px 32px;
+  border-radius: 8px; 
+  background-color: #ffffff;
+}
+main .topo{
+  display: flex;
+  justify-content: space-between; 
+  margin-bottom: 24px; 
+}
+.topo span{
+  font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: -0.02em;
+color: rgba(0, 0, 0, 0.64);
+
+}
+/* border: 1px solid red; */
+.topo p{
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: -0.02em;
+color: rgba(0, 0, 0, 0.88);
+}
+.topo div:nth-child(2){
+  text-align: right;
+}
+main .identify{
+  border-radius: 8px; 
+  background-color: #ffffff;  
+}
+main .qrcode{
+  
+  border-radius: 8px; 
+  background-color: #ffffff; 
+}
+
+footer{
+  color: #ffffff;
+}
