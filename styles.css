@@ -151,6 +151,21 @@ main .qrcode .aviso{
   margin-top: 24px;
   text-align: center;
 }
+main .qrcode .aviso p{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;  
+  color: rgba(0, 0, 0, 0.8);
+  
+}
+main .qrcode .aviso b{
+  font-weight: 500;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+color: rgba(0, 0, 0, 0.8);
+}
 footer {
   margin-top: 20px;
   text-align: center;
