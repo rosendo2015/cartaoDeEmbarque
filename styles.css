@@ -63,7 +63,6 @@ main .destino {
   align-items: center;
 }
 main .destino span:nth-child(1) {
-  
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -82,98 +81,152 @@ main .destino span:nth-child(3) {
   line-height: 19px;
   color: rgba(0, 0, 0, 0.8);
 }
-main .identify {  
-  border-top: 1px dashed rgba(0, 0, 0, 0.32);
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.32);
+main .identify {
   display: flex;
   justify-content: space-between;
   border-radius: 24px;
   background-color: #ffffff;
   padding: 24px 32px;
+  position: relative;
 }
-
-main .identify span{
+main .identify::before {
+  content: "";
+  display: inline;
+  background: transparent;
+  border: 1px dashed rgba(0, 0, 0, 0.32);
+  border-bottom: none; 
+  width: 87%;
+  height: 0px;
+  position: absolute;
+  top: 86px;
+  left: 20px;
+}
+main .identify::after {
+  content: "";
+  display: inline;
+  background: transparent;
+  border: 1px dashed rgba(0, 0, 0, 0.32);
+  border-bottom: none; 
+  width: 87%;
+  height: 0px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+main .identify span {
   font-weight: 400;
   font-size: 14px;
-  line-height: 17px;  
+  line-height: 17px;
   color: rgba(0, 0, 0, 0.64);
 }
-main .identify p{
+main .identify p {
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   color: rgba(0, 0, 0, 0.88);
-  
 }
 main .qrcode {
   padding: 24px 32px;
   border-radius: 24px;
   background-color: #ffffff;
 }
-main .qrcode .container div:nth-child(2){
+main .qrcode .container div:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 main .qrcode .container p:nth-child(4),
-main .qrcode .container p:nth-child(6){ 
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-color: rgba(0, 0, 0, 0.88);
-
+main .qrcode .container p:nth-child(6) {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(0, 0, 0, 0.88);
 }
-main .qrcode .container p:nth-child(2){
+main .qrcode .container p:nth-child(2) {
   color: #ffffff;
-background: #633BBC;
-padding: 4px 8px;
-border-radius: 8px;
-font-weight: 500;
-font-size: 16px;
-line-height: 19px;
-width: 80%;
-color: #FFFFFF;
-
+  background: #633bbc;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  width: 80%;
+  color: #ffffff;
 }
-main .qrcode .container{
-display: flex;
-justify-content: space-between;
+main .qrcode .container {
+  display: flex;
+  justify-content: space-between;
 }
-main .qrcode span{
+main .qrcode span {
   font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-color: rgba(0, 0, 0, 0.64);
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(0, 0, 0, 0.64);
 }
 
-main .qrcode .aviso{
+main .qrcode .aviso {
   margin-top: 24px;
   text-align: center;
 }
-main .qrcode .aviso p{
+main .qrcode .aviso p {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;  
+  text-align: center;
   color: rgba(0, 0, 0, 0.8);
-  
 }
-main .qrcode .aviso b{
+main .qrcode .aviso b {
   font-weight: 500;
-font-size: 16px;
-line-height: 20px;
-text-align: center;
-color: rgba(0, 0, 0, 0.8);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.8);
 }
 footer {
   margin-top: 20px;
   text-align: center;
   font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-text-align: center;
-letter-spacing: -0.02em;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.02em;
 
-color: #FFFFFF;
+  color: #ffffff;
+}
+@media (min-width: 600px) {
+  body {
+    background: #8257e5;
+  }
+  main .header {
+    background-image: radial-gradient(
+        circle at left top,
+        #8257e5 0,
+        transparent 0
+      ),
+      radial-gradient(circle at left bottom, #8257e5 20px, transparent 0),
+      radial-gradient(circle at right top, #8257e5 0, transparent 0),
+      radial-gradient(circle at right bottom, #8257e5 20px, transparent 0);
+  }
+
+  main .identify {
+    background-image: radial-gradient(
+        circle at left top,
+        #8257e5 20px,
+        transparent 0
+      ),
+      radial-gradient(circle at left bottom, #8257e5 20px, transparent 0),
+      radial-gradient(circle at right top, #8257e5 20px, transparent 0),
+      radial-gradient(circle at right bottom, #8257e5 20px, transparent 0);
+  }
+  main .qrcode {
+    background-image: radial-gradient(
+        circle at left top,
+        #8257e5 20px,
+        transparent 0
+      ),
+      radial-gradient(circle at left bottom, #8257e5 0, transparent 0),
+      radial-gradient(circle at right top, #8257e5 20px, transparent 0),
+      radial-gradient(circle at right bottom, #8257e5 0, transparent 0);
+  }
 }
