@@ -1,10 +1,10 @@
-## Desafio 05 #BoraCoda - Cartão de Embarque
+## Desafio 06 #BoraCoda - Cartão de Embarque
 
 ![Preview](./.github/preview.png)
 
 ## :dart:  Desafio
 
-Desafio 04 do #BoraCodar da Rocketseat, consiste na construção de um bilhete de embarque com duas versões
+Desafio 06 do #BoraCodar da Rocketseat, consiste na construção de um bilhete de embarque com duas versões
 
 ## :nut_and_bolt: Tech
 
